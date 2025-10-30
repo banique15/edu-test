@@ -1,0 +1,247 @@
+/* CSS Variables */
+:root {
+  --SFH-White: white;
+  --SFH-Black: black;
+  --SFH-Green: #349552;
+  --SFH-Cream: #FDF9F1;
+  
+  /* Global Goals Colors */
+  --01_No-Poverty: #E5243B;
+  --02_Zero-Hunger: #DDA63A;
+  --03_Good-Health-Wellbeing: #4C9F38;
+  --04_Quality-Education: #C5192D;
+  --05_Gender-Equality: #FF3A21;
+  --06_Clean-Water: #26BDE2;
+  --07_Affordable-Clean-Energy: #F2BA44;
+  --08_Decent-Work: #A21942;
+  --09_Industry-Innovation-Infrastructure: #FA6622;
+  --10_Reduced-Inequalities: #DD1367;
+  --11_Sustainable-Cities: #FD9D24;
+  --12_Responsible-Consumption: #BF8B2E;
+  --13_Climate-Action: #3F7E44;
+  --14_Life-Below-Water: #0A97D9;
+  --15_Life-on-Land: #56C02B;
+  --16_Peace-Justice-Strong: #00689D;
+  --17_Partnerships-for-the-Goals: #19486A;
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Founders Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: var(--SFH-Cream);
+  overflow-x: hidden;
+}
+
+/* Typography Styles */
+.text-sign-in {
+  color: var(--SFH-White);
+  font-size: 20px;
+  font-family: 'Founders Grotesk';
+  font-weight: 500;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.text-site-link {
+  color: var(--SFH-Black);
+  font-size: 16px;
+  font-family: 'Founders Grotesk';
+  font-weight: 400;
+  line-height: 19.20px;
+  word-wrap: break-word;
+}
+
+.text-nav-item {
+  color: var(--SFH-White);
+  font-size: 20px;
+  font-family: 'Founders Grotesk';
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.text-section-title {
+  color: var(--SFH-Black);
+  font-size: 60px;
+  font-family: 'Founders Grotesk';
+  font-weight: 400;
+  line-height: 54px;
+  word-wrap: break-word;
+}
+
+.text-goal-number {
+  color: var(--SFH-White);
+  font-size: 52px;
+  font-family: 'Founders Grotesk';
+  font-weight: 400;
+  line-height: 42px;
+  word-wrap: break-word;
+}
+
+.text-goal-number-dark {
+  color: var(--SFH-Black);
+  font-size: 52px;
+  font-family: 'Founders Grotesk';
+  font-weight: 400;
+  line-height: 42px;
+  word-wrap: break-word;
+}
+
+.text-goal-title {
+  color: var(--SFH-White);
+  font-size: 24px;
+  font-family: 'Founders Grotesk';
+  font-weight: 500;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.text-goal-title-dark {
+  color: var(--SFH-Black);
+  font-size: 24px;
+  font-family: 'Founders Grotesk';
+  font-weight: 500;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.text-grade-title {
+  color: var(--SFH-Black);
+  font-size: 48px;
+  font-family: 'Founders Grotesk';
+  font-weight: 400;
+  line-height: 43.20px;
+  word-wrap: break-word;
+}
+
+.text-grade-item {
+  color: var(--SFH-Black);
+  font-size: 46px;
+  font-family: 'Founders Grotesk';
+  font-weight: 300;
+  line-height: 42px;
+  word-wrap: break-word;
+}
+
+.text-faq-title {
+  color: var(--SFH-Black);
+  font-size: 48px;
+  font-family: 'Founders Grotesk';
+  font-weight: 400;
+  line-height: 43.20px;
+  word-wrap: break-word;
+}
+
+.text-faq-question {
+  color: var(--SFH-Black);
+  font-size: 24px;
+  font-family: 'Founders Grotesk';
+  font-weight: 500;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.text-footer-title {
+  color: var(--SFH-White);
+  font-size: 30.68px;
+  font-family: 'Founders Grotesk';
+  font-weight: 400;
+  line-height: 36.75px;
+  word-wrap: break-word;
+}
+
+.text-footer-link {
+  color: var(--SFH-White);
+  font-size: 24px;
+  font-family: 'Founders Grotesk';
+  font-weight: 400;
+  line-height: 28.75px;
+  word-wrap: break-word;
+}
+
+.text-footer-section {
+  color: var(--SFH-White);
+  font-size: 20px;
+  font-family: 'Founders Grotesk';
+  font-weight: 500;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.text-footer-item {
+  color: var(--SFH-White);
+  font-size: 18px;
+  font-family: 'Founders Grotesk';
+  font-weight: 400;
+  line-height: 21.60px;
+  word-wrap: break-word;
+}
+
+.text-copyright {
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 14px;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 400;
+  line-height: 16.77px;
+  word-wrap: break-word;
+}
+
+.text-org-title {
+  color: var(--SFH-Black);
+  font-size: 28px;
+  font-family: 'Founders Grotesk';
+  font-weight: 500;
+  line-height: 28px;
+  word-wrap: break-word;
+}
+
+.text-org-description {
+  color: var(--SFH-Black);
+  font-size: 18px;
+  font-family: 'Founders Grotesk';
+  font-weight: 400;
+  line-height: 21.60px;
+  word-wrap: break-word;
+}
+
+.text-button {
+  color: var(--SFH-White);
+  font-size: 18px;
+  font-family: 'Founders Grotesk';
+  font-weight: 500;
+  line-height: 21.60px;
+  word-wrap: break-word;
+}
+
+.text-subject-large {
+  color: var(--SFH-White);
+  font-size: 76px;
+  font-family: 'Founders Grotesk';
+  font-weight: 400;
+  line-height: 64.60px;
+  word-wrap: break-word;
+}
+
+.text-hero-title {
+  color: var(--SFH-Green);
+  font-size: 84px;
+  font-family: 'Founders Grotesk';
+  font-weight: 400;
+  line-height: 75.60px;
+  word-wrap: break-word;
+}
+
+.text-hero-subtitle {
+  color: var(--SFH-Black);
+  font-size: 24px;
+  font-family: 'Founders Grotesk';
+  font-weight: 400;
+  line-height: 29.52px;
+  word-wrap: break-word;
+}
