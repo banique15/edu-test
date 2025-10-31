@@ -29,12 +29,24 @@
 </script>
 
 <div class="home">
+  <!-- Top Container with 80/20 split -->
+  <div class="top-container">
+    <div class="green-section">
+      <!-- 80% green section -->
+    </div>
+    <div class="right-section">
+      <a href="https://singforhope.org" target="_blank" class="site-link">
+        singforhope.org ↗
+      </a>
+    </div>
+  </div>
+
   <!-- Navigation Header -->
   <nav class="navigation-header">
     <div class="nav-content">
       <div class="logo">
-        <span class="logo-text">SING FOR HOPE</span>
-        <span class="logo-subtitle">CLASSROOM</span>
+        <img src="/others/Layer_1-2.svg" alt="Sing for Hope" class="logo-image sing-for-hope-logo" />
+        <img src="/others/Classroom 1.svg" alt="Classroom" class="logo-image classroom-logo" />
       </div>
       
       <div class="nav-links">
@@ -43,9 +55,6 @@
       </div>
       
       <div class="nav-actions">
-        <a href="https://singforhope.org" target="_blank" class="site-link">
-          singforhope.org ↗
-        </a>
         <button class="sign-in-btn">Sign In</button>
       </div>
     </div>
@@ -209,13 +218,64 @@
     background: var(--SFH-Cream);
   }
 
+  /* Top Container with 80/20 split */
+  .top-container {
+    display: flex;
+    width: calc(100% - 160px);
+    height: 50px;
+    margin: 20px 80px 0 80px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+  }
+
+  .green-section {
+    flex: 0 0 80%;
+    background: var(--SFH-Green);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .right-section {
+    flex: 0 0 20%;
+    background: var(--SFH-Cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .right-section .site-link {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    transition: all 0.3s;
+    white-space: nowrap;
+    outline: none;
+  }
+
+  .right-section .site-link:hover {
+    transform: scale(1.05);
+  }
+
+  .right-section .site-link:focus {
+    outline: none;
+  }
+
   /* Navigation */
   .navigation-header {
     background: var(--SFH-Green);
-    padding: 20px 80px;
+    padding: 0 0 20px 0;
+    margin: 0 80px 0 80px;
     position: sticky;
     top: 0;
     z-index: 100;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 
   .nav-content {
@@ -228,30 +288,39 @@
 
   .logo {
     display: flex;
-    flex-direction: column;
-    color: white;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    z-index: 10;
+    padding-left: 40px;
   }
 
-  .logo-text {
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 2px;
+  .logo-image {
+    height: 40px;
+    width: auto;
+    filter: brightness(0) invert(1);
   }
 
-  .logo-subtitle {
-    font-size: 12px;
-    letter-spacing: 3px;
+  .sing-for-hope-logo {
+    height: 80px;
+    transform: translateY(-20px);
+  }
+
+  .classroom-logo {
+    height: 30px;
+    transform: translateY(-20px);
   }
 
   .nav-links {
     display: flex;
     gap: 60px;
+    transform: translateY(-20px);
   }
 
   .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     transition: opacity 0.3s;
   }
 
@@ -263,6 +332,7 @@
     display: flex;
     gap: 30px;
     align-items: center;
+    padding-right: 40px;
   }
 
   .site-link {
