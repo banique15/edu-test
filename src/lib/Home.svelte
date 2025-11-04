@@ -16,7 +16,7 @@
     { number: 8, title: "Decent Work & Economic Growth", color: "#A21942", textColor: "white", wide: true, icon: "/About/about-goal-8.svg" },
     { number: 9, title: "Industry, Innovation & Infrastructure", color: "#FA6622", textColor: "white", icon: "/About/about-goal-9.svg" },
     { number: 10, title: "Reduced Inequalities", color: "#DD1367", textColor: "white", icon: "/About/about-goal-10.svg" },
-    { number: 11, title: "Sustainable Cities & Communities", color: "#FD9D24", textColor: "black", icon: "/About/about-goal-11.svg" },
+    { number: 11, title: "Sustainable Citie & Communities", color: "#FD9D24", textColor: "black", icon: "/About/about-goal-11.svg" },
     { number: 12, title: "Responsible Consumption & Production", color: "#BF8B2E", textColor: "white", icon: "/About/about-goal-12.svg" },
     { number: 13, title: "Climate Action", color: "#3F7E44", textColor: "white", icon: "/About/about-goal-13.svg" },
     { number: 14, title: "Life Below Water", color: "#0A97D9", textColor: "white", icon: "/About/about-goal-14.svg" },
