@@ -1,0 +1,368 @@
+/* Sing for Hope Classroom Design Tokens */
+/* Import this file into your components for consistent styling */
+
+:root {
+  /* Primary Brand Colors */
+  --sfh-green: #349552;
+  --sfh-white: #ffffff;
+  --sfh-black: #000000;
+  --sfh-cream: #FDF9F1;
+  --sfh-cream-dark: #EEEAE5;
+  --sfh-text-60: rgba(0, 0, 0, 0.60);
+  --sfh-text-dark: #002730;
+
+  /* Sustainable Development Goals Colors */
+  --sdg-1-no-poverty: #E5243B;
+  --sdg-1-no-poverty-dark: #C71B30;
+  --sdg-2-zero-hunger: #DDA63A;
+  --sdg-2-zero-hunger-light: #F4BE52;
+  --sdg-3-good-health: #4C9F38;
+  --sdg-3-good-health-dark: #388626;
+  --sdg-4-quality-education: #C5192D;
+  --sdg-4-quality-education-dark: #850010;
+  --sdg-5-gender-equality: #FF3A21;
+  --sdg-5-gender-equality-dark: #DA2A14;
+  --sdg-6-clean-water: #26BDE2;
+  --sdg-6-clean-water-light: #42DAFF;
+  --sdg-7-clean-energy: #F2BA44;
+  --sdg-7-clean-energy-light: #FFD375;
+  --sdg-8-decent-work: #A21942;
+  --sdg-8-decent-work-dark: #8C062E;
+  --sdg-9-industry-innovation: #FA6622;
+  --sdg-9-industry-innovation-dark: #D94603;
+  --sdg-10-reduced-inequalities: #DD1367;
+  --sdg-10-reduced-inequalities-dark: #B30B51;
+  --sdg-11-sustainable-cities: #FD9D24;
+  --sdg-11-sustainable-cities-light: #FFB559;
+  --sdg-12-responsible-consumption: #BF8B2E;
+  --sdg-12-responsible-consumption-dark: #A0701A;
+  --sdg-13-climate-action: #3F7E44;
+  --sdg-13-climate-action-dark: #306334;
+  --sdg-14-life-below-water: #0A97D9;
+  --sdg-14-life-below-water-dark: #077BB2;
+  --sdg-15-life-on-land: #56C02B;
+  --sdg-15-life-on-land-light: #64DE32;
+  --sdg-16-peace-justice: #00689D;
+  --sdg-16-peace-justice-dark: #01537C;
+  --sdg-17-partnerships: #19486A;
+  --sdg-17-partnerships-dark: #0C3350;
+
+  /* Typography */
+  --font-family: 'Founders Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Font Sizes */
+  --font-size-display: 84px;
+  --font-size-h1: 60px;
+  --font-size-h2: 48px;
+  --font-size-h3: 32px;
+  --font-size-h4: 28px;
+  --font-size-h5: 28px;
+  --font-size-h6: 20px;
+  --font-size-subhead: 14px;
+  --font-size-body-large: 24px;
+  --font-size-body: 18px;
+  --font-size-body-small: 16px;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+
+  /* Line Heights */
+  --line-height-tight: 90%;
+  --line-height-normal: 120%;
+  --line-height-relaxed: 130%;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -2.5px;
+  --letter-spacing-normal: -1px;
+  --letter-spacing-wide: 5px;
+
+  /* Border Radius */
+  --border-radius-small: 10px;
+  --border-radius-medium: 20px;
+  --border-radius-large: 24px;
+  --border-radius-pill: 50px;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 6px;
+  --spacing-md: 10px;
+  --spacing-lg: 12px;
+  --spacing-xl: 16px;
+  --spacing-2xl: 20px;
+  --spacing-3xl: 24px;
+  --spacing-4xl: 32px;
+  --spacing-5xl: 40px;
+
+  /* Shadows */
+  --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-large: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  /* Borders */
+  --border-width-thin: 0.5px;
+  --border-width-normal: 1px;
+  --border-width-thick: 1.5px;
+}
+
+/* Typography Utility Classes */
+.font-display {
+  font-family: var(--font-family);
+  font-size: var(--font-size-display);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.font-h1 {
+  font-family: var(--font-family);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+.font-h2 {
+  font-family: var(--font-family);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+.font-h3 {
+  font-family: var(--font-family);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+.font-h4,
+.font-h5 {
+  font-family: var(--font-family);
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+.font-h6 {
+  font-family: var(--font-family);
+  font-size: var(--font-size-h6);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+}
+
+.font-subhead {
+  font-family: var(--font-family);
+  font-size: var(--font-size-subhead);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  line-height: var(--line-height-normal);
+}
+
+.font-body-large {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body-large);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-relaxed);
+}
+
+.font-body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+}
+
+.font-body-small {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body-small);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+}
+
+/* Component Classes */
+.btn {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-medium);
+  padding: var(--spacing-lg) var(--spacing-2xl);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.btn-primary {
+  background-color: var(--sfh-green);
+  color: var(--sfh-white);
+}
+
+.btn-primary:hover {
+  background-color: color-mix(in srgb, var(--sfh-green) 90%, black);
+}
+
+.btn-secondary {
+  background-color: var(--sfh-white);
+  color: var(--sfh-green);
+  border: var(--border-width-thick) solid var(--sfh-green);
+}
+
+.btn-secondary:hover {
+  background-color: var(--sfh-green);
+  color: var(--sfh-white);
+}
+
+.card {
+  background-color: var(--sfh-white);
+  border-radius: var(--border-radius-medium);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-medium);
+}
+
+.card-outline {
+  background-color: var(--sfh-white);
+  border-radius: var(--border-radius-medium);
+  padding: var(--spacing-2xl);
+  border: var(--border-width-thick) solid var(--sfh-green);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--border-radius-pill);
+  font-family: var(--font-family);
+  font-size: var(--font-size-body-small);
+  font-weight: var(--font-weight-regular);
+}
+
+.pill-default {
+  background-color: var(--sfh-green);
+  color: var(--sfh-white);
+}
+
+.pill-outline {
+  background-color: transparent;
+  border: var(--border-width-thick) solid var(--sfh-black);
+  color: var(--sfh-black);
+}
+
+/* SDG Pill Classes */
+.pill-sdg-1 { background-color: var(--sdg-1-no-poverty); color: var(--sfh-white); }
+.pill-sdg-2 { background-color: var(--sdg-2-zero-hunger); color: var(--sfh-black); }
+.pill-sdg-3 { background-color: var(--sdg-3-good-health); color: var(--sfh-white); }
+.pill-sdg-4 { background-color: var(--sdg-4-quality-education); color: var(--sfh-white); }
+.pill-sdg-5 { background-color: var(--sdg-5-gender-equality); color: var(--sfh-white); }
+.pill-sdg-6 { background-color: var(--sdg-6-clean-water); color: var(--sfh-black); }
+.pill-sdg-7 { background-color: var(--sdg-7-clean-energy); color: var(--sfh-black); }
+.pill-sdg-8 { background-color: var(--sdg-8-decent-work); color: var(--sfh-white); }
+.pill-sdg-9 { background-color: var(--sdg-9-industry-innovation); color: var(--sfh-white); }
+.pill-sdg-10 { background-color: var(--sdg-10-reduced-inequalities); color: var(--sfh-white); }
+.pill-sdg-11 { background-color: var(--sdg-11-sustainable-cities); color: var(--sfh-black); }
+.pill-sdg-12 { background-color: var(--sdg-12-responsible-consumption); color: var(--sfh-white); }
+.pill-sdg-13 { background-color: var(--sdg-13-climate-action); color: var(--sfh-white); }
+.pill-sdg-14 { background-color: var(--sdg-14-life-below-water); color: var(--sfh-white); }
+.pill-sdg-15 { background-color: var(--sdg-15-life-on-land); color: var(--sfh-black); }
+.pill-sdg-16 { background-color: var(--sdg-16-peace-justice); color: var(--sfh-white); }
+.pill-sdg-17 { background-color: var(--sdg-17-partnerships); color: var(--sfh-white); }
+
+/* Layout Utilities */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-xs { gap: var(--spacing-xs); }
+.gap-sm { gap: var(--spacing-sm); }
+.gap-md { gap: var(--spacing-md); }
+.gap-lg { gap: var(--spacing-lg); }
+.gap-xl { gap: var(--spacing-xl); }
+.gap-2xl { gap: var(--spacing-2xl); }
+.gap-3xl { gap: var(--spacing-3xl); }
+.gap-4xl { gap: var(--spacing-4xl); }
+.gap-5xl { gap: var(--spacing-5xl); }
+
+/* Text Colors */
+.text-green { color: var(--sfh-green); }
+.text-white { color: var(--sfh-white); }
+.text-black { color: var(--sfh-black); }
+.text-dark { color: var(--sfh-text-dark); }
+.text-muted { color: var(--sfh-text-60); }
+
+/* Background Colors */
+.bg-green { background-color: var(--sfh-green); }
+.bg-white { background-color: var(--sfh-white); }
+.bg-cream { background-color: var(--sfh-cream); }
+.bg-cream-dark { background-color: var(--sfh-cream-dark); }
+
+/* Border Radius */
+.rounded-sm { border-radius: var(--border-radius-small); }
+.rounded { border-radius: var(--border-radius-medium); }
+.rounded-lg { border-radius: var(--border-radius-large); }
+.rounded-full { border-radius: var(--border-radius-pill); }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+  
+  .font-display {
+    font-size: 48px;
+    line-height: 1.1;
+  }
+  
+  .font-h1 {
+    font-size: 36px;
+  }
+  
+  .font-h2 {
+    font-size: 32px;
+  }
+  
+  .font-h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .font-display {
+    font-size: 36px;
+  }
+  
+  .font-h1 {
+    font-size: 28px;
+  }
+  
+  .font-h2 {
+    font-size: 24px;
+  }
+}

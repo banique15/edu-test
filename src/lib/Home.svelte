@@ -46,6 +46,7 @@
     </div>
     <div class="header-art">
       <div class="frame-45">
+        <img src="/Home/home-desktop-hero-in-shape.gif" alt="Hero Animation" class="hero-gif" />
         <div class="frame-138">
           <div class="vector"></div>
           <div class="vector_01"></div>
@@ -277,6 +278,17 @@
     position: absolute;
   }
 
+  .hero-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-radius: 20px;
+  }
+
   .frame-138 {
     width: 196px;
     height: 130px;
@@ -289,6 +301,7 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 10px;
+    z-index: 2;
   }
 
   .frame-139 {
@@ -303,6 +316,7 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    z-index: 2;
   }
 
   .rectangle-46 {

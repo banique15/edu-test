@@ -1,0 +1,753 @@
+/* Sing for Hope Classroom Style Guide CSS */
+
+/* CSS Custom Properties for Brand Colors */
+:root {
+  --SFH-Green: #349552;
+  --SFH-White: white;
+  --SFH-Black: black;
+  --SFH-Cream: #FDF9F1;
+  --SFH-Cream-Dark: #EEEAE5;
+  --SFH-Text-60: rgba(0, 0, 0, 0.60);
+  
+  /* Sustainable Development Goals Colors */
+  --01_No-Poverty: #E5243B;
+  --02_Zero-Hunger: #DDA63A;
+  --03_Good-Health-Wellbeing: #4C9F38;
+  --04_Quality-Education: #C5192D;
+  --05_Gender-Equality: #FF3A21;
+  --06_Clean-Water-Sanitation: #26BDE2;
+  --07_Affordable-Clean-Energy: #F2BA44;
+  --08_Decent-Work-Economic-Growth: #A21942;
+  --09_Industry-Innovation-Infrastructure: #FA6622;
+  --10_Reduced-Inequalities: #DD1367;
+  --11_Sustainable-Cities-Communities: #FD9D24;
+  --12_Responsible-Consumption-Production: #BF8B2E;
+  --13_Climate-Action: #3F7E44;
+  --14_Life-Below-Water: #0A97D9;
+  --15_Life-on-Land: #56C02B;
+  --16_Peace-Justice-Strong-Institutions: #00689D;
+  --17_Partnerships-for-the-Goals: #19486A;
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Founders Grotesk', Arial, sans-serif;
+  background-color: var(--SFH-Cream);
+}
+
+/* Typography Styles */
+.introduction_span,
+.logolockup_span,
+.color_span,
+.typography_span,
+.iconography_span,
+.boundingshapes_span,
+.buildingblocks_span {
+  color: #002730;
+  font-size: 16px;
+  font-family: 'Founders Grotesk', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 19.20px;
+  word-wrap: break-word;
+}
+
+.singforhopeclassroomstyleguide_span {
+  color: white;
+  font-size: 62.99px;
+  font-family: 'Founders Grotesk', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 56.69px;
+  word-wrap: break-word;
+}
+
+.introduction_01_span {
+  color: black;
+  font-size: 48px;
+  font-family: 'Founders Grotesk', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 43.20px;
+  word-wrap: break-word;
+}
+
+.thesingforhopeclassroomwebsiteismeanttofeellikeanextensionofthesingforhopebrandcorebrandelementslikethelogoandbrandgreenareusedasfoundationalelementsandtheglobalgoalscolorpaletteandiconographyislayeredontopofitadditionalpiecessuchasthetypefaceroundedcornersandbuildingblockselementhavebeenaddedtoaddapproachabilityandfuntothesitethesectionsbelowintroduceallofthedifferentsiteelementsrefertothewebsitecomponentsandlayoutsforamoreindepthviewofhoweverythingcomestogether_span {
+  color: rgba(0, 0, 0, 0.60);
+  font-size: 18px;
+  font-family: 'Founders Grotesk', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 21.60px;
+  word-wrap: break-word;
+}
+
+/* Layout Styles */
+.style-guide {
+  width: 1280px;
+  height: 8767px;
+  position: relative;
+  background: var(--SFH-Cream);
+  overflow: hidden;
+}
+
+.navigation {
+  width: 192px;
+  height: 310px;
+  left: 32px;
+  top: 72.81px;
+  position: absolute;
+  background: white;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  display: inline-flex;
+}
+
+.contents {
+  align-self: stretch;
+  height: 366px;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  display: flex;
+}
+
+/* Logo Styles */
+.logo {
+  width: 160px;
+  height: 56.28px;
+  position: relative;
+}
+
+.classroom-1 {
+  width: 94.92px;
+  height: 15.38px;
+  left: 63.30px;
+  top: 20.45px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.logos {
+  width: 55.80px;
+  height: 56.28px;
+  left: -0.28px;
+  top: 0px;
+  position: absolute;
+  overflow: hidden;
+}
+
+/* Vector Styles - These would need actual SVG paths for full implementation */
+.vector, .vector_01, .vector_02, .vector_03, .vector_04, .vector_05, .vector_06, .vector_07, .vector_08, .vector_09, .vector_10, .vector_11 {
+  position: absolute;
+  background: var(--SFH-Green);
+}
+
+.vector_12, .vector_13, .vector_14, .vector_15, .vector_16, .vector_17, .vector_18, .vector_19, .vector_20, .vector_21, .vector_22, .vector_23 {
+  position: absolute;
+  background: var(--SFH-Green);
+}
+
+/* Navigation Links */
+.link, .link_01, .link_02, .link_03, .link_04, .link_05, .link_06 {
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+}
+
+.introduction, .logo-lockup, .color, .typography, .iconography, .bounding-shapes, .building-blocks {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Content Area */
+.frame-6_01 {
+  height: 7982px;
+  left: 252px;
+  top: 72.74px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+}
+
+.frame-142 {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+/* Hero Section */
+.frame-47 {
+  width: 1028px;
+  height: 298px;
+  position: relative;
+  border-left: 1px rgba(0, 0, 0, 0.10) solid;
+}
+
+.rectangle-45 {
+  width: 357.33px;
+  height: 208.04px;
+  left: 639.55px;
+  top: 90.04px;
+  position: absolute;
+  background: #D9D9D9;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.sing-for-hope-classroom-style-guide {
+  width: 325.27px;
+  height: 178px;
+  left: 56.28px;
+  top: 26.07px;
+  position: absolute;
+}
+
+/* Introduction Section */
+.intro-section {
+  align-self: stretch;
+  padding-top: 60px;
+  padding-bottom: 73px;
+  padding-left: 31.95px;
+  padding-right: 31.95px;
+  border-left: 1px rgba(0, 0, 0, 0.10) solid;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 29.95px;
+  display: flex;
+}
+
+.content {
+  align-self: stretch;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 74.89px;
+  display: inline-flex;
+}
+
+.frame-9 {
+  flex: 1 1 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 34px;
+  display: flex;
+}
+
+.introduction_01 {
+  width: 340.27px;
+  height: 74.01px;
+}
+
+.the-sing-for-hope-classroom-website-is-meant-to-feel-like-an-extension-of-the-sing-for-hope-brand-core-brand-elements-like-the-logo-and-brand-green-are-used-as-foundational-elements-and-the-global-goals-color-palette-and-iconography-is-layered-on-top-of-it-additional-pieces-such-as-the-typeface-rounded-corners-and-building-blocks-element-have-been-added-to-add-approachability-and-fun-to-the-site-the-sections-below-introduce-all-of-the-different-site-elements-refer-to-the-website-components-and-layouts-for-a-more-in-depth-view-of-how-everything-comes-together {
+  flex: 1 1 0;
+  height: 176px;
+}
+
+/* Logo Section */
+.logo-section {
+  align-self: stretch;
+  height: 505px;
+  padding-top: 31.95px;
+  padding-bottom: 119.82px;
+  padding-left: 31.95px;
+  padding-right: 31.95px;
+  border-left: 1px rgba(0, 0, 0, 0.10) solid;
+  border-top: 1px rgba(0, 0, 0, 0.10) solid;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 35px;
+  display: flex;
+}
+
+.content_01 {
+  align-self: stretch;
+  height: 74px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 74.89px;
+  display: inline-flex;
+}
+
+.frame-9_01 {
+  width: 48.28px;
+  height: 48.79px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 153.92px;
+  display: flex;
+}
+
+.logo-lockup_01 {
+  width: 340.27px;
+  height: 48px;
+}
+
+.logolockup_01_span {
+  color: black;
+  font-size: 48px;
+  font-family: 'Founders Grotesk', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 43.20px;
+  word-wrap: break-word;
+}
+
+/* Color Section */
+.color-section {
+  align-self: stretch;
+  height: 1587px;
+  padding-top: 31.95px;
+  padding-left: 31.95px;
+  padding-right: 31.95px;
+  border-left: 1px rgba(0, 0, 0, 0.10) solid;
+  border-top: 1px rgba(0, 0, 0, 0.10) solid;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  display: flex;
+}
+
+.header {
+  align-self: stretch;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 31.95px;
+  display: inline-flex;
+}
+
+.frame-9_02 {
+  flex: 1 1 0;
+  height: 39px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 34px;
+  display: flex;
+}
+
+.color_01 {
+  width: 340.27px;
+  height: 74.01px;
+}
+
+.color_01_span {
+  color: black;
+  font-size: 48px;
+  font-family: 'Founders Grotesk', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 43.20px;
+  word-wrap: break-word;
+}
+
+/* Primary Palette */
+.color-palette {
+  align-self: stretch;
+  height: 1202px;
+  padding-bottom: 119.82px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  display: flex;
+}
+
+.primary {
+  align-self: stretch;
+  padding-top: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 39.94px;
+  display: flex;
+}
+
+.primarypalette_span {
+  color: #002730;
+  font-size: 24px;
+  font-family: 'Founders Grotesk', Arial, sans-serif;
+  font-weight: 500;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+/* Typography Section */
+.color-section_01 {
+  align-self: stretch;
+  height: 1178px;
+  padding-top: 31.95px;
+  padding-left: 31.95px;
+  padding-right: 31.95px;
+  border-left: 1px rgba(0, 0, 0, 0.10) solid;
+  border-top: 1px rgba(0, 0, 0, 0.10) solid;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  display: flex;
+}
+
+.typography_01_span {
+  color: black;
+  font-size: 48px;
+  font-family: 'Founders Grotesk', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 43.20px;
+  word-wrap: break-word;
+}
+
+.foundersgrotesk_span {
+  color: #002730;
+  font-size: 24px;
+  font-family: 'Founders Grotesk', Arial, sans-serif;
+  font-weight: 500;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+/* Iconography Section */
+.color-section_02 {
+  align-self: stretch;
+  height: 1545px;
+  padding-top: 31.95px;
+  padding-left: 31.95px;
+  padding-right: 31.95px;
+  border-left: 1px rgba(0, 0, 0, 0.10) solid;
+  border-top: 1px rgba(0, 0, 0, 0.10) solid;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  display: flex;
+}
+
+.iconography_01_span {
+  color: black;
+  font-size: 48px;
+  font-family: 'Founders Grotesk', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 43.20px;
+  word-wrap: break-word;
+}
+
+/* Bounding Shapes Section */
+.color-section_03 {
+  align-self: stretch;
+  height: 1317px;
+  padding-top: 31.95px;
+  padding-left: 31.95px;
+  padding-right: 31.95px;
+  border-left: 1px rgba(0, 0, 0, 0.10) solid;
+  border-top: 1px rgba(0, 0, 0, 0.10) solid;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  display: flex;
+}
+
+.boundingshapes_01_span {
+  color: black;
+  font-size: 48px;
+  font-family: 'Founders Grotesk', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 43.20px;
+  word-wrap: break-word;
+}
+
+/* Building Blocks Section */
+.color-section_04 {
+  align-self: stretch;
+  height: 1417px;
+  position: relative;
+  border-left: 1px rgba(0, 0, 0, 0.10) solid;
+  border-top: 1px rgba(0, 0, 0, 0.10) solid;
+}
+
+.buildingblocks_01_span {
+  color: black;
+  font-size: 48px;
+  font-family: 'Founders Grotesk', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 43.20px;
+  word-wrap: break-word;
+}
+
+/* Footer */
+.frame-967 {
+  width: 1280px;
+  height: 478px;
+  left: 0px;
+  top: 8289.24px;
+  position: absolute;
+}
+
+.rectangle-61 {
+  width: 1280px;
+  height: 478px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: var(--SFH-Green);
+}
+
+.scrolling-text {
+  width: 1220.57px;
+  height: 92.29px;
+  left: 29.43px;
+  top: 86.10px;
+  position: absolute;
+  text-align: center;
+}
+
+.scrollingtext_span {
+  color: var(--SFH-White);
+  font-size: 78.72px;
+  font-family: 'Founders Grotesk', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 70.85px;
+  word-wrap: break-word;
+}
+
+.logos_03 {
+  width: 160.37px;
+  height: 161.75px;
+  left: 559.81px;
+  top: 239px;
+  position: absolute;
+  overflow: hidden;
+}
+
+/* Utility Classes for Flexbox */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1280px) {
+  .style-guide {
+    width: 100%;
+    max-width: 1280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  
+  .frame-6_01 {
+    left: 0;
+    padding: 16px;
+  }
+  
+  .singforhopeclassroomstyleguide_span {
+    font-size: 32px;
+    line-height: 28px;
+  }
+  
+  .introduction_01_span,
+  .color_01_span,
+  .typography_01_span,
+  .iconography_01_span,
+  .boundingshapes_01_span,
+  .buildingblocks_01_span {
+    font-size: 32px;
+    line-height: 28px;
+  }
+}
+
+/* Color Swatches */
+.color-swatch {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+}
+
+.color-swatch::after {
+  content: attr(data-color);
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.swatch-sfh-green { background-color: var(--SFH-Green); }
+.swatch-cream { background-color: var(--SFH-Cream); }
+.swatch-cream-dark { background-color: var(--SFH-Cream-Dark); }
+.swatch-white { background-color: var(--SFH-White); border: 1px solid #ccc; }
+.swatch-black { background-color: var(--SFH-Black); }
+
+/* Typography Examples */
+.type-display {
+  font-size: 84px;
+  font-weight: 500;
+  line-height: 90%;
+  letter-spacing: -2.5px;
+}
+
+.type-h1 {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 90%;
+  letter-spacing: -1px;
+}
+
+.type-h2 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 90%;
+  letter-spacing: -1px;
+}
+
+.type-h3 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 90%;
+  letter-spacing: -1px;
+}
+
+.type-h4,
+.type-h5 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 90%;
+  letter-spacing: -1px;
+}
+
+.type-h6 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.type-subhead {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 120%;
+}
+
+.type-body-large {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.type-body {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.type-body-small {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+/* Rounded Rectangle Components */
+.rounded-rect {
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.rounded-rect-solid {
+  background-color: var(--SFH-Green);
+  color: white;
+}
+
+.rounded-rect-outline {
+  background-color: white;
+  border: 1.5px solid var(--SFH-Green);
+  color: var(--SFH-Black);
+}
+
+/* Pill Components */
+.pill {
+  border-radius: 50px;
+  padding: 6px 14px;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pill-default {
+  background-color: var(--SFH-Green);
+  color: white;
+}
+
+.pill-outline {
+  background-color: transparent;
+  border: 1.5px solid black;
+  color: black;
+}
+
+/* SDG Goal Pills */
+.pill-goal-1 { background-color: var(--01_No-Poverty); color: white; }
+.pill-goal-2 { background-color: var(--02_Zero-Hunger); color: black; }
+.pill-goal-3 { background-color: var(--03_Good-Health-Wellbeing); color: white; }
+.pill-goal-4 { background-color: var(--04_Quality-Education); color: white; }
+.pill-goal-5 { background-color: var(--05_Gender-Equality); color: white; }
+.pill-goal-6 { background-color: var(--06_Clean-Water-Sanitation); color: black; }
+.pill-goal-7 { background-color: var(--07_Affordable-Clean-Energy); color: black; }
+.pill-goal-8 { background-color: var(--08_Decent-Work-Economic-Growth); color: white; }
+.pill-goal-9 { background-color: var(--09_Industry-Innovation-Infrastructure); color: white; }
+.pill-goal-10 { background-color: var(--10_Reduced-Inequalities); color: white; }
+.pill-goal-11 { background-color: var(--11_Sustainable-Cities-Communities); color: black; }
+.pill-goal-12 { background-color: var(--12_Responsible-Consumption-Production); color: white; }
+.pill-goal-13 { background-color: var(--13_Climate-Action); color: white; }
+.pill-goal-14 { background-color: var(--14_Life-Below-Water); color: white; }
+.pill-goal-15 { background-color: var(--15_Life-on-Land); color: black; }
+.pill-goal-16 { background-color: var(--16_Peace-Justice-Strong-Institutions); color: white; }
+.pill-goal-17 { background-color: var(--17_Partnerships-for-the-Goals); color: white; }

@@ -12,7 +12,6 @@
         <div class="footer-links">
           <button class="footer-link" on:click={() => navigateTo('curriculum')}>Curriculum</button>
           <button class="footer-link" on:click={() => navigateTo('about')}>About</button>
-          <div class="footer-link">Contributors</div>
         </div>
         
         <h4 class="footer-subtitle">By Subject</h4>

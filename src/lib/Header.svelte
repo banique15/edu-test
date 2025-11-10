@@ -8,6 +8,17 @@
     event.preventDefault();
     navigateTo(page);
   }
+
+  function handleLogoClick() {
+    navigateTo('home');
+  }
+
+  function handleLogoKeydown(event: KeyboardEvent) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      navigateTo('home');
+    }
+  }
 </script>
 
 <!-- Header Container -->
@@ -29,7 +40,15 @@
     </div>
 
     <!-- Logo Section - positioned relative to entire header -->
-    <div class="logo-section">
+    <div
+      class="logo-section"
+      on:click={handleLogoClick}
+      on:keydown={handleLogoKeydown}
+      role="button"
+      tabindex="0"
+      style="cursor: pointer;"
+      aria-label="Go to home page"
+    >
       <div class="sfh-logo">
         <img src="/others/Layer_1-2.svg" alt="Sing for Hope" class="sfh-logo-img" />
       </div>
@@ -57,13 +76,13 @@
           {#if !isLoggedIn}
             <button class="sign-in-btn">Sign In</button>
           {:else}
-            <div class="account-section">
+            <button class="account-section" on:click={() => navigateTo('myaccount')}>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <circle cx="10" cy="7" r="3" stroke="white" stroke-width="1.5"/>
                 <path d="M4 18c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="white" stroke-width="1.5"/>
               </svg>
               <span>My Account</span>
-            </div>
+            </button>
           {/if}
         </div>
       </div>
@@ -280,6 +299,8 @@
     padding: 8px 16px;
     border-radius: 20px;
     transition: background 0.2s;
+    background: none;
+    border: none;
   }
 
   .account-section:hover {

@@ -1,0 +1,479 @@
+/* 
+ * Sing for Hope Classroom - Brand Elements CSS
+ * Scoped to .brand-elements to prevent conflicts with existing styles
+ * All classes are prefixed with .brand-elements to ensure isolation
+ */
+
+.brand-elements {
+  font-family: 'Founders Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #FDF9F1;
+  padding: 32px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Brand Element Typography */
+.brand-elements .logos_span {
+  color: #002730;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 43.20px;
+}
+
+.brand-elements .singforhopelogos_span {
+  color: #002730;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26.40px;
+}
+
+.brand-elements .color_span {
+  color: #002730;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 43.20px;
+}
+
+.brand-elements .iconsglyphs_span {
+  color: #002730;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 43.20px;
+}
+
+.brand-elements .singforhopeclassroomlogos_span {
+  color: #002730;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26.40px;
+}
+
+/* Logo Containers */
+.brand-elements .logos_01 {
+  padding: 32px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.brand-elements .rectangle {
+  width: 100%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 24px 0;
+}
+
+.brand-elements .logos_02 {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo Variations */
+.brand-elements .colorfull-color,
+.brand-elements .colorwhite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.brand-elements .colorfull-color {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.brand-elements .colorwhite {
+  background: #349552;
+}
+
+/* Vector Graphics - Sing for Hope Logos */
+.brand-elements .vector,
+.brand-elements .vector_01,
+.brand-elements .vector_02,
+.brand-elements .vector_03,
+.brand-elements .vector_04,
+.brand-elements .vector_05,
+.brand-elements .vector_06,
+.brand-elements .vector_07,
+.brand-elements .vector_08,
+.brand-elements .vector_09,
+.brand-elements .vector_10,
+.brand-elements .vector_11 {
+  background: #349552;
+  position: absolute;
+}
+
+.brand-elements .vector_12,
+.brand-elements .vector_13,
+.brand-elements .vector_14,
+.brand-elements .vector_15,
+.brand-elements .vector_16,
+.brand-elements .vector_17,
+.brand-elements .vector_18,
+.brand-elements .vector_19,
+.brand-elements .vector_20,
+.brand-elements .vector_21,
+.brand-elements .vector_22,
+.brand-elements .vector_23 {
+  background: white;
+  position: absolute;
+}
+
+/* SDG Color Swatches */
+.brand-elements .secondary {
+  padding: 32px 0;
+}
+
+.brand-elements .frame-51 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.brand-elements .color-row-1,
+.brand-elements .color-row-5,
+.brand-elements .color-row-2,
+.brand-elements .color-row-3 {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Individual Color Swatches */
+.brand-elements .color-5,
+.brand-elements .color-6,
+.brand-elements .color-9,
+.brand-elements .color-8,
+.brand-elements .color-5_01,
+.brand-elements .color-6_01,
+.brand-elements .color-7,
+.brand-elements .color-8_01,
+.brand-elements .color-5_02,
+.brand-elements .color-6_02,
+.brand-elements .color-7_01,
+.brand-elements .color-8_02,
+.brand-elements .color-5_03,
+.brand-elements .color-6_03 {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.brand-elements .img,
+.brand-elements .img_01,
+.brand-elements .img_02,
+.brand-elements .img_03,
+.brand-elements .img_04,
+.brand-elements .img_05,
+.brand-elements .img_06,
+.brand-elements .img_07,
+.brand-elements .img_08,
+.brand-elements .img_09,
+.brand-elements .img_10,
+.brand-elements .img_11,
+.brand-elements .img_12,
+.brand-elements .img_13 {
+  height: 120px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* SDG Color Backgrounds */
+.brand-elements .dark {
+  background: #E5243B; /* Goal 1 - No Poverty */
+}
+
+.brand-elements .dark_02 {
+  background: #DDA63A; /* Goal 2 - Zero Hunger */
+}
+
+.brand-elements .dark_04 {
+  background: #4C9F38; /* Goal 3 - Good Health */
+}
+
+.brand-elements .dark_06 {
+  background: #C5192D; /* Goal 4 - Quality Education */
+}
+
+.brand-elements .dark_08 {
+  background: #FF3A21; /* Goal 5 - Gender Equality */
+}
+
+.brand-elements .dark_10 {
+  background: #26BDE2; /* Goal 6 - Clean Water */
+}
+
+.brand-elements .dark_12 {
+  background: #F2BA44; /* Goal 7 - Affordable Energy */
+}
+
+.brand-elements .dark_14 {
+  background: #A21942; /* Goal 8 - Decent Work */
+}
+
+.brand-elements .dark_16 {
+  background: #FA6622; /* Goal 9 - Industry Innovation */
+}
+
+.brand-elements .dark_18 {
+  background: #DD1367; /* Goal 10 - Reduced Inequalities */
+}
+
+.brand-elements .dark_20 {
+  background: #FD9D24; /* Goal 11 - Sustainable Cities */
+}
+
+.brand-elements .dark_22 {
+  background: #BF8B2E; /* Goal 12 - Responsible Consumption */
+}
+
+.brand-elements .dark_24 {
+  background: #3F7E44; /* Goal 13 - Climate Action */
+}
+
+.brand-elements .dark_26 {
+  background: #0A97D9; /* Goal 14 - Life Below Water */
+}
+
+/* Secondary/Hover Colors */
+.brand-elements .success-green {
+  background: #C71B30;
+}
+
+.brand-elements .success-green_01 {
+  background: #F4BE52;
+}
+
+.brand-elements .success-green_02 {
+  background: #388626;
+}
+
+.brand-elements .success-green_03 {
+  background: #850010;
+}
+
+.brand-elements .success-green_04 {
+  background: #DA2A14;
+}
+
+.brand-elements .success-green_05 {
+  background: #42DAFF;
+}
+
+.brand-elements .success-green_06 {
+  background: #FFD375;
+}
+
+.brand-elements .success-green_07 {
+  background: #8C062E;
+}
+
+.brand-elements .success-green_08 {
+  background: #D94603;
+}
+
+.brand-elements .success-green_09 {
+  background: #B30B51;
+}
+
+.brand-elements .success-green_10 {
+  background: #FFB559;
+}
+
+.brand-elements .success-green_11 {
+  background: #A0701A;
+}
+
+.brand-elements .success-green_12 {
+  background: #306334;
+}
+
+.brand-elements .success-green_13 {
+  background: #077BB2;
+}
+
+/* Text Styling for Color Swatches */
+.brand-elements .text-1,
+.brand-elements .text-1_01,
+.brand-elements .text-1_02,
+.brand-elements .text-1_03,
+.brand-elements .text-1_04,
+.brand-elements .text-1_05,
+.brand-elements .text-1_06,
+.brand-elements .text-1_07,
+.brand-elements .text-1_08,
+.brand-elements .text-1_09,
+.brand-elements .text-1_10,
+.brand-elements .text-1_11,
+.brand-elements .text-1_12,
+.brand-elements .text-1_13 {
+  color: white;
+  font-size: 42.94px;
+  font-weight: 400;
+  line-height: 34.36px;
+  padding: 12px;
+}
+
+.brand-elements .frame-50,
+.brand-elements .frame-50_01,
+.brand-elements .frame-50_02,
+.brand-elements .frame-50_03,
+.brand-elements .frame-50_04,
+.brand-elements .frame-50_05,
+.brand-elements .frame-50_06,
+.brand-elements .frame-50_07,
+.brand-elements .frame-50_08,
+.brand-elements .frame-50_09,
+.brand-elements .frame-50_10,
+.brand-elements .frame-50_11,
+.brand-elements .frame-50_12,
+.brand-elements .frame-50_13 {
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-top: auto;
+}
+
+.brand-elements .dark_01_span,
+.brand-elements .dark_03_span,
+.brand-elements .dark_05_span,
+.brand-elements .dark_07_span,
+.brand-elements .dark_09_span,
+.brand-elements .dark_11_span,
+.brand-elements .dark_13_span,
+.brand-elements .dark_15_span,
+.brand-elements .dark_17_span,
+.brand-elements .dark_19_span,
+.brand-elements .dark_21_span,
+.brand-elements .dark_23_span,
+.brand-elements .dark_25_span,
+.brand-elements .dark_27_span {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.20px;
+}
+
+.brand-elements .text-850010,
+.brand-elements .text-850010_01,
+.brand-elements .text-850010_02,
+.brand-elements .text-850010_03,
+.brand-elements .text-850010_04,
+.brand-elements .text-850010_05,
+.brand-elements .text-850010_06,
+.brand-elements .text-850010_07,
+.brand-elements .text-850010_08,
+.brand-elements .text-850010_09,
+.brand-elements .text-850010_10,
+.brand-elements .text-850010_11,
+.brand-elements .text-850010_12,
+.brand-elements .text-850010_13 {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.brand-elements .f50010_span,
+.brand-elements .f50010_01_span,
+.brand-elements .f50010_02_span,
+.brand-elements .f50010_03_span,
+.brand-elements .f50010_04_span,
+.brand-elements .f50010_05_span,
+.brand-elements .f50010_06_span,
+.brand-elements .f50010_07_span,
+.brand-elements .f50010_08_span,
+.brand-elements .f50010_09_span,
+.brand-elements .f50010_10_span,
+.brand-elements .f50010_11_span,
+.brand-elements .f50010_12_span,
+.brand-elements .f50010_13_span {
+  color: white;
+}
+
+/* Labels */
+.brand-elements .label,
+.brand-elements .label_01,
+.brand-elements .label_02,
+.brand-elements .label_03,
+.brand-elements .label_04,
+.brand-elements .label_05,
+.brand-elements .label_06,
+.brand-elements .label_07,
+.brand-elements .label_08,
+.brand-elements .label_09,
+.brand-elements .label_10,
+.brand-elements .label_11,
+.brand-elements .label_12 {
+  padding: 8px 0;
+}
+
+.brand-elements .goal1nopoverty_span,
+.brand-elements .goal1nopoverty_01_span,
+.brand-elements .goal1nopoverty_02_span,
+.brand-elements .goal1nopoverty_03_span,
+.brand-elements .goal1nopoverty_04_span,
+.brand-elements .goal1nopoverty_05_span,
+.brand-elements .goal1nopoverty_06_span,
+.brand-elements .goal1nopoverty_07_span,
+.brand-elements .goal1nopoverty_08_span,
+.brand-elements .goal1nopoverty_09_span,
+.brand-elements .goal1nopoverty_10_span,
+.brand-elements .goal1nopoverty_11_span,
+.brand-elements .goal1nopoverty_12_span {
+  color: #002730;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .brand-elements {
+    padding: 16px;
+  }
+  
+  .brand-elements .logos_02 {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .brand-elements .color-row-1,
+  .brand-elements .color-row-5,
+  .brand-elements .color-row-2,
+  .brand-elements .color-row-3 {
+    flex-direction: column;
+  }
+  
+  .brand-elements .color-5,
+  .brand-elements .color-6,
+  .brand-elements .color-9,
+  .brand-elements .color-8 {
+    min-width: 100%;
+  }
+}
+
+/* Utility Classes for Brand Elements */
+.brand-elements .sfh-green {
+  background-color: #349552;
+}
+
+.brand-elements .sfh-cream {
+  background-color: #FDF9F1;
+}
+
+.brand-elements .sfh-cream-dark {
+  background-color: #EEEAE5;
+}
+
+.brand-elements .sfh-black {
+  background-color: #024C54;
+}
+
+.brand-elements .sfh-white {
+  background-color: white;
+}

@@ -344,125 +344,87 @@
 
     <!-- Main Content -->
     <div class="curriculum-library_01">
-      <!-- Lessons Grid -->
-      <div class="grid">
-        {#each filteredLessons as lesson (lesson.id)}
-          <div class="lesson-card" data-screen-size="Desktop" style="outline-color: {lesson.goalColor};">
-            <div class="frame-154">
-              <div class="frame-153">
-                <div class="lesson-title-lorem-ipsum">
-                  <span class="lessontitleloremipsum_span">{lesson.title}</span>
-                </div>
-                <button
-                  class="icon_favorite"
-                  data-state={lesson.isFavorited ? "Selected" : "Default"}
-                  on:click={() => toggleFavorite(lesson.id)}
-                  aria-label={lesson.isFavorited ? "Remove from favorites" : "Add to favorites"}
-                >
-                  <div class="ellipse-614" style="border-color: {lesson.goalColor};"></div>
-                  <div class="favorite_24dp_000000_fill0_wght400_grad0_opsz24-1-2">
-                    <div class="vector_24" style="background: {lesson.goalColor};"></div>
-                  </div>
-                </button>
-              </div>
-              <div class="lorem-ipsum-dolor-sit-amet-consectetur-adip">
-                <span class="loremipsumdolorsitametconsecteturadip_span">{lesson.description}</span>
-              </div>
-            </div>
-            <div class="frame-109">
-              <div class="lesson-pill" style="background: {lesson.goalColor};">
-                <div><span class="creativewriting_span">{lesson.sdgGoal}</span></div>
-              </div>
-              <div class="lesson-pill_01" style="background: {lesson.goalColor};">
-                <div><span class="creativewriting_01_span">{lesson.subject}</span></div>
-              </div>
-              {#each lesson.gradeLevel as grade}
-                <div class="lesson-pill_02" style="background: {lesson.goalColor};">
-                  <div><span class="creativewriting_02_span">{grade}</span></div>
-                </div>
-              {/each}
-            </div>
-          </div>
-        {/each}
+      <!-- Results Section -->
+      <div class="results"><span class="results_span">Results</span></div>
+      
+      <!-- AI Assistant Response -->
+      <div class="ai-response">
+        <span class="ai-response-question">What would be a good first lesson for my 6th graders, related to water?</span><br/>
+        <span class="ai-response-answer">You could try Fluid Expressions (Art) or Words That Flow (Creative Writing) because they're low-prep, 30–60 minute starters that immediately engage 6th graders with Global Goal 6: Clean Water & Sanitation. Both use accessible tools—paint, paper, words, and sound—to surface prior knowledge and emotions about water while building shared vocabulary for the unit.</span>
       </div>
 
-      <!-- Filtering Sidebar -->
+      <!-- Lessons Grid -->
+      <div class="grid">
+        <div class="lesson-card" data-screen-size="Desktop" style="outline-color: #26BDE2;">
+          <div class="frame-154">
+            <div class="frame-153">
+              <div class="lesson-title-lorem-ipsum">
+                <span class="lessontitleloremipsum_span">Words That Flow</span>
+              </div>
+              <button class="icon_favorite" data-state="Default" aria-label="Add to favorites">
+                <div class="ellipse-614" style="border-color: #26BDE2;"></div>
+                <div class="favorite_24dp_000000_fill0_wght400_grad0_opsz24-1-2">
+                  <div class="vector" style="background: #26BDE2;"></div>
+                </div>
+              </button>
+            </div>
+            <div class="lorem-ipsum-dolor-sit-amet-consectetur-adip">
+              <span class="loremipsumdolorsitametconsecteturadip_span">Lorem ipsum dolor sit amet, consectetur adip</span>
+            </div>
+          </div>
+          <div class="frame-109">
+            <div class="lesson-pill" style="background: #26BDE2;">
+              <div><span class="creativewriting_span">6. Clean Water & Sanitation</span></div>
+            </div>
+            <div class="lesson-pill_01" style="background: #26BDE2;">
+              <div><span class="creativewriting_01_span">Creative Writing</span></div>
+            </div>
+            <div class="lesson-pill_02" style="background: #26BDE2;">
+              <div><span class="creativewriting_02_span">Grades 5-8</span></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lesson-card_01" data-screen-size="Desktop" style="outline-color: #26BDE2;">
+          <div class="frame-154_01">
+            <div class="frame-153_01">
+              <div class="lesson-title-lorem-ipsum_01">
+                <span class="lessontitleloremipsum_01_span">Fluid Expressions</span>
+              </div>
+              <button class="icon_favorite_01" data-state="Default" aria-label="Add to favorites">
+                <div class="ellipse-614_01" style="border-color: #26BDE2;"></div>
+                <div class="favorite_24dp_000000_fill0_wght400_grad0_opsz24-1-2_01">
+                  <div class="vector_01" style="background: #26BDE2;"></div>
+                </div>
+              </button>
+            </div>
+            <div class="lorem-ipsum-dolor-sit-amet-consectetur-adip_01">
+              <span class="loremipsumdolorsitametconsecteturadip_01_span">Lorem ipsum dolor sit amet, consectetur adip</span>
+            </div>
+          </div>
+          <div class="frame-109_01">
+            <div class="lesson-pill_03" style="background: #26BDE2;">
+              <div><span class="creativewriting_03_span">6. Clean Water & Sanitation</span></div>
+            </div>
+            <div class="lesson-pill_04" style="background: #26BDE2;">
+              <div><span class="creativewriting_04_span">Visual Art</span></div>
+            </div>
+            <div class="lesson-pill_05" style="background: #26BDE2;">
+              <div><span class="creativewriting_05_span">Grades 5-8</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filtering Sidebar (Collapsed) -->
       <div class="filtering">
         <div class="frame-1069">
           <div class="filter"><span class="filter_span">Filter</span></div>
-          <div class="glyph_01">
-            <div class="bounding-box_01"></div>
+          <div class="glyph">
+            <div class="bounding-box"></div>
             <div class="keyboard_arrow_down"></div>
           </div>
         </div>
-
-        <!-- Grade Level Filter -->
-        <div class="grade-level">
-          <div class="grade-level_01"><span class="gradelevel_01_span">Grade Level</span></div>
-          <div class="grade-filter-pills">
-            {#each gradeLevels as grade}
-              <button 
-                class="filter-pill" 
-                class:selected={selectedGradeLevel === grade}
-                data-state={selectedGradeLevel === grade ? "Selected" : "Default"}
-                on:click={() => selectedGradeLevel = grade}
-              >
-                <div><span class="f-8_span">{grade}</span></div>
-                {#if selectedGradeLevel === grade}
-                  <div class="vector_44"></div>
-                {/if}
-              </button>
-            {/each}
-          </div>
-        </div>
-
-        <!-- Subjects Filter -->
-        <div class="subjects">
-          <div class="subjects_01"><span class="subjects_01_span">Subjects</span></div>
-          <div class="subject-filter-pills">
-            {#each subjects as subject}
-              <button 
-                class="filter-pill" 
-                class:selected={selectedSubject === subject}
-                data-state={selectedSubject === subject ? "Selected" : "Default"}
-                on:click={() => selectedSubject = subject}
-              >
-                <div><span class="f-8_03_span">{subject}</span></div>
-                {#if selectedSubject === subject}
-                  <div class="vector_45"></div>
-                {/if}
-              </button>
-            {/each}
-          </div>
-        </div>
-
-        <!-- SDG Goals Filter -->
-        <div class="sustainable-development-goals">
-          <div class="sustainable-development-goals_01">
-            <span class="sustainabledevelopmentgoals_01_span">Sustainable Development Goals</span>
-          </div>
-          <div class="goals-filter-pills">
-            {#each sdgGoals as goal}
-              <button 
-                class="filter-pill_09" 
-                class:selected={selectedSDGGoal === goal}
-                data-state={selectedSDGGoal === goal ? "Selected" : "Default"}
-                on:click={() => selectedSDGGoal = goal}
-              >
-                <div><span class="f-8_09_span">{goal}</span></div>
-                {#if selectedSDGGoal === goal}
-                  <div class="frame-1061">
-                    <div class="vector_46"></div>
-                  </div>
-                {/if}
-              </button>
-            {/each}
-          </div>
-        </div>
-
-        <button class="primary-button" data-size="Large" data-state="Default" on:click={applyFilters}>
-          <div><span class="makeanaccount_span">Apply Filters</span></div>
-        </button>
       </div>
     </div>
   </div>
@@ -581,7 +543,7 @@
 
   /* Page Title */
   .page-title-container {
-    padding: 120px 80px 60px;
+    padding: 40px 80px 60px;
     margin-top: 0;
     background: var(--SFH-Cream, #FDF9F1);
   }
@@ -726,36 +688,71 @@
 
   .curriculum-library_01 {
     width: 100%;
+    height: 100%;
     position: relative;
-    margin-top: 80px;
-    padding: 0 80px;
-    overflow: hidden;
-    display: flex;
-    gap: 60px;
-    align-items: flex-start;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    background: var(--SFH-Cream, #FDF9F1);
+  }
+
+  .results {
+    width: 602.70px;
+    height: 43px;
+    left: 413.40px;
+    top: 44.62px;
+    position: absolute;
+  }
+
+  .results_span {
+    color: var(--SFH-Black, black);
+    font-size: 48px;
+    font-family: Founders Grotesk;
+    font-weight: 400;
+    line-height: 43.20px;
+    word-wrap: break-word;
+  }
+
+  .ai-response {
+    width: 730.10px;
+    left: 413.40px;
+    top: 122.87px;
+    position: absolute;
+  }
+
+  .ai-response-question {
+    color: var(--SFH-Black, black);
+    font-size: 20px;
+    font-family: Founders Grotesk;
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+  }
+
+  .ai-response-answer {
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 18px;
+    font-family: Founders Grotesk;
+    font-weight: 400;
+    line-height: 21.60px;
+    word-wrap: break-word;
   }
 
   .grid {
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    grid-gap: 32px;
-    margin-top: 0;
-    padding: 0;
-    justify-content: center;
+    width: 950px;
+    height: 257px;
+    left: 409px;
+    top: 297.26px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
   }
 
   .lesson-card {
     width: 100%;
     min-height: 280px;
-    padding: 32px;
+    padding: 24px;
     background: var(--SFH-White, white);
     overflow: hidden;
-    border-radius: 24px;
+    border-radius: 16px;
     outline: 2px solid;
     outline-offset: -2px;
     flex-direction: column;
@@ -886,7 +883,10 @@
 
   .creativewriting_span,
   .creativewriting_01_span,
-  .creativewriting_02_span {
+  .creativewriting_02_span,
+  .creativewriting_03_span,
+  .creativewriting_04_span,
+  .creativewriting_05_span {
     color: var(--SFH-Black, black);
     font-size: 16px;
     font-family: 'Founders Grotesk', sans-serif;
@@ -895,27 +895,157 @@
     word-wrap: break-word;
   }
 
-  .filtering {
-    width: 360px;
-    min-width: 360px;
-    padding: 32px;
-    margin-top: 0;
+  .lesson-card_01 {
+    width: 306.25px;
+    align-self: stretch;
+    padding: 20px;
     background: var(--SFH-White, white);
     overflow: hidden;
-    border-radius: 24px;
-    outline: 2px rgba(52, 149, 82, 0.2) solid;
-    outline-offset: -2px;
+    border-radius: 20px;
+    outline: 1.50px solid;
+    outline-offset: -1.50px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: inline-flex;
+  }
+
+  .frame-154_01 {
+    align-self: stretch;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 32px;
+    gap: 6px;
     display: flex;
-    flex-shrink: 0;
-    align-self: flex-start;
-    position: sticky;
-    top: 120px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    height: fit-content;
+  }
+
+  .frame-153_01 {
+    width: 266px;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: inline-flex;
+  }
+
+  .lesson-title-lorem-ipsum_01 {
+    width: 217px;
+  }
+
+  .lessontitleloremipsum_01_span {
+    color: var(--SFH-Black, black);
+    font-size: 32px;
+    font-family: Founders Grotesk;
+    font-weight: 400;
+    line-height: 32px;
+    word-wrap: break-word;
+  }
+
+  .icon_favorite_01 {
+    width: 36px;
+    height: 36px;
+    position: relative;
+  }
+
+  .ellipse-614_01 {
+    width: 36px;
+    height: 36px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    border-radius: 9999px;
+    border: 1.50px solid;
+  }
+
+  .favorite_24dp_000000_fill0_wght400_grad0_opsz24-1-2_01 {
+    width: 16.62px;
+    height: 16.62px;
+    left: 9.69px;
+    top: 10.64px;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .vector {
+    width: 13.85px;
+    height: 12.70px;
+    left: 1.38px;
+    top: 1.83px;
+    position: absolute;
+  }
+
+  .vector_01 {
+    width: 13.85px;
+    height: 12.70px;
+    left: 1.38px;
+    top: 1.83px;
+    position: absolute;
+  }
+
+  .lorem-ipsum-dolor-sit-amet-consectetur-adip_01 {
+    align-self: stretch;
+  }
+
+  .loremipsumdolorsitametconsecteturadip_01_span {
+    color: var(--SFH-Black, black);
+    font-size: 18px;
+    font-family: Founders Grotesk;
+    font-weight: 400;
+    line-height: 21.60px;
+    word-wrap: break-word;
+  }
+
+  .frame-109_01 {
+    align-self: stretch;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  .lesson-pill_03,
+  .lesson-pill_04,
+  .lesson-pill_05 {
+    height: 28px;
+    padding-bottom: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    overflow: hidden;
+    border-radius: 53px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .bounding-box {
+    width: 27px;
+    height: 27px;
+    background: #D9D9D9;
+  }
+
+  .keyboard_arrow_down {
+    width: 16.80px;
+    height: 10.06px;
+    background: var(--SFH-Black, black);
+  }
+
+  .filtering {
+    width: 316px;
+    height: 75px;
+    padding: 20px;
+    left: 77px;
+    top: 32px;
+    position: absolute;
+    background: var(--SFH-White, white);
+    overflow: hidden;
+    border-radius: 20px;
+    outline: 1.50px rgba(0, 0, 0, 0.10) solid;
+    outline-offset: -1.50px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    display: inline-flex;
   }
 
   .frame-1069 {
@@ -1417,13 +1547,13 @@
   /* Enhanced Responsive Design */
   @media (max-width: 1440px) {
     .page-title-container {
-      padding: 100px 60px 50px;
+      padding: 40px 60px 50px;
     }
 
     .curriculum-library_01 {
       padding: 0 60px;
       max-width: 1200px;
-      gap: 50px;
+      gap: 30px;
     }
     
     .saved-lessons {
@@ -1431,7 +1561,7 @@
     }
 
     .filtering {
-      width: 340px;
+      width: 280px;
     }
 
     .rectangle-38 {
@@ -1445,26 +1575,26 @@
 
   @media (max-width: 1200px) {
     .page-title-container {
-      padding: 80px 40px 40px;
+      padding: 40px 40px 40px;
     }
 
     .curriculum-library_01 {
-      gap: 40px;
+      gap: 30px;
       padding: 0 40px;
     }
 
     .grid {
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      grid-gap: 28px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
     }
     
     .frame-969 {
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      grid-gap: 28px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
     }
 
     .filtering {
-      width: 320px;
+      width: 260px;
     }
 
     .rectangle-38 {
@@ -1478,7 +1608,7 @@
 
   @media (max-width: 968px) {
     .page-title-container {
-      padding: 80px 30px 40px;
+      padding: 40px 30px 40px;
     }
 
     .page-title {
@@ -1489,7 +1619,7 @@
     .curriculum-library_01 {
       flex-direction: column;
       padding: 0 30px;
-      gap: 40px;
+      gap: 30px;
       margin-top: 60px;
     }
     
@@ -1500,14 +1630,14 @@
       top: auto;
       margin-top: 0;
       order: -1;
-      padding: 24px;
+      padding: 20px;
       height: auto;
     }
     
     .grid {
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       margin-top: 0;
-      grid-gap: 24px;
+      grid-gap: 16px;
     }
 
     .search_01 {
@@ -1527,14 +1657,14 @@
     }
 
     .frame-969 {
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      grid-gap: 24px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 16px;
     }
   }
 
   @media (max-width: 768px) {
     .page-title-container {
-      padding: 60px 20px 30px;
+      padding: 40px 20px 30px;
     }
 
     .page-title {
@@ -1545,12 +1675,12 @@
     .curriculum-library_01 {
       padding: 0 20px;
       margin-top: 40px;
-      gap: 30px;
+      gap: 20px;
     }
     
     .grid {
       grid-template-columns: 1fr;
-      grid-gap: 20px;
+      grid-gap: 16px;
     }
     
     .search_01 {
@@ -1577,7 +1707,7 @@
     
     .frame-969 {
       grid-template-columns: 1fr;
-      grid-gap: 20px;
+      grid-gap: 16px;
     }
 
     .use-our-classroom-assistant-to-help-find-a-lesson {
@@ -1595,8 +1725,8 @@
     }
 
     .filtering {
-      gap: 20px;
-      padding: 20px;
+      gap: 16px;
+      padding: 16px;
     }
 
     .yoursavedlessons_span {
@@ -1617,7 +1747,7 @@
 
   @media (max-width: 480px) {
     .page-title-container {
-      padding: 50px 16px 25px;
+      padding: 40px 16px 25px;
     }
 
     .page-title {
@@ -1627,7 +1757,7 @@
 
     .curriculum-library_01 {
       padding: 0 16px;
-      gap: 24px;
+      gap: 16px;
     }
 
     .use-our-classroom-assistant-to-help-find-a-lesson {
@@ -1651,19 +1781,19 @@
 
     .lesson-card,
     .lesson-card_20 {
-      padding: 20px;
-      min-height: 260px;
+      padding: 16px;
+      min-height: 240px;
     }
 
     .lessontitleloremipsum_span,
     .lessontitleloremipsum_20_span {
-      font-size: 26px;
-      line-height: 28px;
+      font-size: 24px;
+      line-height: 26px;
     }
 
     .filtering {
-      padding: 16px;
-      gap: 16px;
+      padding: 12px;
+      gap: 12px;
     }
 
     .frame-868 {
